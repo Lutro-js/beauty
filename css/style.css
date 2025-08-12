@@ -31,3 +31,24 @@ a:hover {
 @media screen and (max-width: 767px) {
 
 }
+
+#header .logo{
+    width: 100%;
+    max-width: 120px;
+    line-height: 0;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 50;
+}
+#header .logo a {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    #header .logo {
+        max-width: 85px;
+        top: 20px;
+        left: 20px;
+    }
+}
