@@ -8,6 +8,7 @@ body {
     background-color: #fdf8f8;
     color: #333;
     font-family: 'YuGothic', 'Yu Gothic', sans-serif;
+    margin: 0;
 }
 
 img {
@@ -61,6 +62,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
     .mainvisual img {
+        width: 100vw;
         height: 480px;
     }
 }
@@ -194,6 +196,7 @@ a:hover {
         margin-bottom: 30px;
     }
     .new-products .img-group {
+
         height: auto;
         position: static;
     }
@@ -211,7 +214,7 @@ a:hover {
         margin: 0 auto;
         position: static;
     }
-    .new-products .img-grop .circle {
+    .new-products .img-group .circle {
         width: 70px;
         height: 70px;
         font-size: 16px;
@@ -282,5 +285,55 @@ a:hover {
     .new-type .img img {
         height: auto;
         object-fit: contain;
+    }
+}
+.online-store {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/bg.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-position: center top;
+    background-size: cover;
+}
+.online-store .box {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.online-store .box .title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.online-store .box .btn {
+    background-color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 30px;
+    position: relative;
+}
+.online-store .box .btn::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+@media screen and (max-width: 767px) {
+    .online-store {
+        height: auto;
+        padding: 20px;
+    }
+    .online-store .box .title {
+        font-size: 24px;
     }
 }
